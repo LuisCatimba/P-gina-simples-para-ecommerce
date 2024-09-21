@@ -1,0 +1,373 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: white;
+}
+
+.header {
+    width: 98%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteinerDivSearch {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.carrinho p {
+    font-size: 20px;
+}
+
+.carrinho span {
+    width: 20px;
+    height: inherit;
+    font-size: 18px;
+    color: white;
+}
+
+.divSearch {
+    width: 230px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    grid-area: 2px;
+    background-color: #ccc;
+    border-radius: 15px;
+    padding: 0 5px;
+}
+
+.divSearch img {
+    width: 30px;
+    height: 20px;
+}
+
+.divSearch input {
+    width: 200px;
+    height: 40px;
+    background-color: #ccc;
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+.logo {
+    margin: 20px;
+    color: #645c5c;
+}
+
+.conteinerCard {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardProduto {
+    width: 350px;
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.cardProduto img {
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+}
+
+.cardProduto p {
+    color: #333;
+}
+
+.cardProduto button {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 25px;
+}
+
+.cardProduto button:hover{
+    opacity: .8;
+    transition:  all .3s;
+}
+
+.fade {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none {
+    display: none;
+}
+
+.modalComprar {
+    width: 60vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+}
+
+.modalComprar img {
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.maisInformacoe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    height: 100%;
+}
+
+.item-preco {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.divQtd {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100px;
+    height: auto;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.divQtd button {
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.maisInformacoe div.btns button {
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.addCarrinho {
+    background-color: green;
+    color: white;
+}
+
+.maisInformacoe div.btns button:hover{
+    opacity: .8;
+    transition: all .3s;
+}
+
+.maisInformacoe div p {
+    color: #ccc;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.maisInformacoe div p.descricao{
+    color: #9e9e9e;
+    font-size: 22px;
+    margin-top: 15px; 
+}
+
+.maisInformacoe div p.preco{
+    color: #9e9e9e;
+    font-size: 25px; 
+    margin-top: 5px;
+}
+
+.menu-lateral {
+    width: 0px;
+    height: 100vh;
+    background-color: #ccc;
+    gap: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+    transition: all .8s;
+}
+
+.header-menu-lateral {
+    display: flex;
+    align-items: center;
+}
+
+.header-menu-lateral button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 24px;
+    font-weight: 700;
+    color: #9e9e9e;
+    cursor: pointer;
+}
+
+.header-menu-lateral button:hover{
+    opacity: .8;
+    transition: all .5s;
+}
+
+.menu-lateral h1 {
+    margin: 20px;
+}
+
+.menu-lateral div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.subtotal, .desconto {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #9e9e9e;
+    margin-bottom: 20px;
+}
+
+.conteinerProdutosCarrinho {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.divProduto {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.divProduto img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.divProduto p.nameProduto {
+   font-size: 18px;
+   font-weight: 100;
+   color: #9e9e9e;
+   text-align: start;
+   width: 150px;
+}
+
+.divProduto .divQtdNoCarrinho {
+    width: 100px;
+    height: auto;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.divProduto .divQtdNoCarrinho p {
+    width: 30px;
+    text-align: center;
+}
+
+.divProduto .divQtdNoCarrinho button {
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+    font-size: 25px;
+    font-weight: 200;
+    color: #9e9e9e;
+}
+
+.divProduto .divQtdNoCarrinho button:hover{
+    opacity: .8;
+    transition: .3s;
+}
+.finalizarCompra {
+    background-color: green;
+    color: white;
+    border: none;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 200;
+    border-radius: 5px;
+    margin: 20px  0;
+}
+
+.finalizarCompra:hover{
+    opacity: .8;
+    transition: all .3;
+}
